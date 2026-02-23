@@ -52,6 +52,7 @@
 | 2026-02-23 | Build as GitHub-hosted docs site first (no backend v1) | Low friction, fast shipping, easy versioning | Michael (approved direction) |
 | 2026-02-23 | Use AI Workflow Mastery methods as operating system for build process | Ensures consistency, QA, and scalability across 36 weeks | Michael |
 | 2026-02-23 | Program format locked: 36 weeks, academic + job-ready, SMB service-business focus | Aligns with business outcome and portfolio goals | Michael |
+| 2026-02-23 | Framework selected: Docusaurus with GitHub Pages deploy workflow | Matches docs-first v1 constraint and fast incremental curriculum shipping | Michael + Codex session implementation |
 
 > Add every significant decision here. Decisions not logged will be forgotten.
 
@@ -86,17 +87,17 @@ This week trains one job-critical capability and produces one concrete artifact.
 ### Completed
 - [x] Program blueprint defined (36 weeks, 3 terms, 16 modules, capstones, deliverables)
 - [x] Phase 1 operating-system structure planned (ops files + prompts folders)
+- [x] Docusaurus v0.1 scaffold created with required docs structure and GitHub Pages workflow
 
 ### In Progress
-- [ ] Phase 1 file creation and initial canon/rules setup
+- [ ] Phase 4: Expand from v0.1 slice to full 36-week content in phased releases
 
 ### Upcoming
-- [ ] Phase 2: Site information architecture lock and docs structure
-- [ ] Phase 3: Codex scaffold task packet + site bootstrap
-- [ ] Phase 4: Week 1 full page + templates + first deploy
+- [ ] Enable GitHub Pages in repository settings and run first deployment from `main`
+- [ ] Add Term 1 weeks w02-w12 using `docs/templates/week.md`
+- [ ] Add remaining rubric/template sets and portfolio asset pages
 
 ### Open Issues
-- Choose framework (default recommended: Docusaurus) — Michael approval pending
 - Choose first example vertical for case studies (default suggested: Home Services)
 
 ---

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SMB AI Tool Builder">
+  <rect width="128" height="128" rx="16" fill="#0f172a"/>
+  <path d="M24 38h80v16H24zm0 36h80v16H24z" fill="#14b8a6"/>
+  <circle cx="32" cy="64" r="8" fill="#f8fafc"/>
+  <circle cx="96" cy="64" r="8" fill="#f8fafc"/>
+</svg>

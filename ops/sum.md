@@ -1,4 +1,4 @@
 # Rolling Summary
 > Keep under 100 words. Replace this after each session.
 
-Initialized Phase 1 operating system for the SMB AI Tool Builder Program site. Created project rules, canon, drift recovery, context checklist, prompt folders, and task packet templates. Canon locks 36-week program structure, GitHub docs-first site approach, and v0.1 build slice. Next step is Phase 2: finalize site framework (default Docusaurus), create docs IA in repo, and prepare Codex scaffold task packet.
+Docusaurus v0.1 scaffold was added for the SMB AI Tool Builder site: core config, docs structure, Week 1 page with required sections, template/rubric starters, portfolio/term placeholders, and GitHub Pages workflow. Existing `docs/ops` files were preserved. Build succeeds in a `/tmp` mirror (`npm install`, `npm run build`); a WSL `/mnt/d` npm rename-permission issue blocked direct install in repo, so `package-lock.json` from the successful mirror install was copied into the repo for CI use.

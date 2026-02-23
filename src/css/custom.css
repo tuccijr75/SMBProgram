@@ -1,0 +1,14 @@
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0d6a63;
+  --ifm-color-primary-darker: #0c655e;
+  --ifm-color-primary-darkest: #0a544d;
+  --ifm-color-primary-light: #118277;
+  --ifm-color-primary-lighter: #12887d;
+  --ifm-color-primary-lightest: #16a394;
+  --ifm-code-font-size: 95%;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0f172a;
+}
