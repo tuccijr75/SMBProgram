@@ -1,0 +1,182 @@
+PROJECT USAGE NOTE
+Use to generate new recurring prompts for this project; test each with PromptTestHarness before saving.
+
+---
+
+====================================================
+MASTER PROMPT BUILDER v1.0
+FLX AI Studio — AI Workflow Mastery
+====================================================
+
+PURPOSE:
+This is a meta-prompt. Use it to generate new master
+prompts for any task. It produces a complete 7-component
+master prompt from your task description.
+
+====================================================
+HOW TO USE
+====================================================
+
+1. Fill in the TASK DESCRIPTION section below
+2. Paste this entire file into an AI session
+3. The AI will generate a complete master prompt
+4. Stress-test the generated prompt (see section below)
+5. Repair any failures
+6. Compress for daily use
+
+====================================================
+TASK DESCRIPTION (fill this in)
+====================================================
+
+TASK:
+[Describe the task in 2–5 sentences. What does it produce?
+How often do you do it? What does "good" look like?]
+
+Example: "I write weekly client status reports for 8 clients.
+Each report summarizes progress, flags risks, and lists
+action items. Good reports are under 500 words, data-driven,
+and require no follow-up questions from the client."
+
+AUDIENCE:
+[Who reads/uses the output? What is their expertise level?]
+
+QUALITY STANDARDS:
+[What makes the output good? Be specific.]
+
+COMMON PROBLEMS:
+[What usually goes wrong when you do this task?]
+
+EXAMPLE INPUT:
+[Optional: Paste one example of the input you typically provide]
+
+EXAMPLE OUTPUT:
+[Optional: Paste one example of excellent output]
+
+====================================================
+GENERATION PROMPT (send this to the AI)
+====================================================
+
+Generate a complete master prompt with ALL 7 components
+for the task described below. Follow these requirements:
+
+COMPONENT 1 — ROLE:
+Define a specific professional role with clear expertise
+and approach attributes. Not vague ("helpful assistant")
+but specific ("senior financial analyst, data-driven,
+conservative, flags assumptions explicitly").
+
+COMPONENT 2 — SCOPE:
+List what the prompt covers (IN SCOPE) and what it does
+not cover (OUT OF SCOPE). Be explicit about boundaries.
+
+COMPONENT 3 — CONSTRAINTS:
+Write 8–12 numbered rules that govern every output.
+Include: tone, format, length, sourcing requirements,
+anti-failure rules. Each rule must be specific and
+testable (not "be professional" but "third-person,
+no contractions, formal vocabulary").
+
+COMPONENT 4 — OUTPUT SCHEMA:
+Define the exact structure of every output. Use a
+template format with section names and descriptions.
+The model fills this template — it is not a suggestion.
+
+COMPONENT 5 — FAILURE HANDLING:
+Write explicit instructions for at least 5 failure
+scenarios: missing data, ambiguous input, out-of-scope
+requests, conflicting instructions, and one domain-
+specific failure mode.
+
+COMPONENT 6 — VERIFICATION:
+Create a checklist of 6–8 items the model must verify
+before delivering. Include: constraint compliance,
+format compliance, data accuracy, and completeness.
+
+COMPONENT 7 — PARAMETER SLOTS:
+Define 5–8 parameter placeholders that change between
+uses. Each should have: name, description, and example.
+
+TASK DESCRIPTION:
+[Paste your task description from above]
+
+FORMAT:
+Use clear section headers. Number all rules and checklist
+items. Use code blocks for the output schema template.
+
+====================================================
+STRESS-TEST BATTERY (run after generation)
+====================================================
+
+After generating the master prompt, run these 5 tests:
+
+TEST 1 — EDGE CASE:
+"Using the master prompt above, process this unusual
+but valid input: [describe an edge case for your task].
+Does the prompt handle it correctly?"
+
+TEST 2 — MISSING DATA:
+"Using the master prompt above, process this input where
+[key parameter] is missing. Does the failure handling
+catch it? Does it hallucinate the missing data?"
+
+TEST 3 — OUT OF SCOPE:
+"Using the master prompt above, process this request
+that is outside the defined scope: [describe an out-of-
+scope request]. Does the prompt correctly reject it?"
+
+TEST 4 — ADVERSARIAL:
+"Using the master prompt above, process this deliberately
+tricky input: [describe something ambiguous, contradictory,
+or misleading]. How does the prompt handle it?"
+
+TEST 5 — SCALE EXTREME:
+"Using the master prompt above, process an input that is
+[much larger / much smaller] than typical. Does the output
+maintain quality at this scale?"
+
+====================================================
+REPAIR TEMPLATE
+====================================================
+
+For each test failure, use this repair process:
+
+FAILURE: [Which test failed]
+SYMPTOM: [What went wrong in the output]
+ROOT CAUSE: [Which component was insufficient]
+FIX: [Specific change to the master prompt]
+
+After each fix:
+1. Re-run the failing test
+2. Re-run all other tests (check for regressions)
+3. Confirm all 5 tests pass
+
+====================================================
+COMPRESSION TEMPLATE
+====================================================
+
+After all tests pass, compress the master prompt:
+
+KEEP (do not compress):
+- All numbered constraints
+- All failure handling rules
+- Output schema
+- Verification checklist
+- Parameter slot names
+
+REMOVE:
+- Explanatory prose between sections
+- Redundant instructions
+- Examples within the prompt itself
+- "Why" explanations (keep only "what")
+
+TARGET: 40–60% shorter than the full version.
+
+TEST: Run 3 standard inputs through the compressed
+version. Compare output quality to the full version.
+If quality drops, restore the compressed content.
+
+====================================================
+VERSION HISTORY
+====================================================
+
+v1.0 — Initial release (AI Workflow Mastery course)

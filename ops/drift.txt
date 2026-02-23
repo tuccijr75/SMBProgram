@@ -1,0 +1,45 @@
+================================================
+DRIFT RECOVERY CARD — SMB PROGRAM SITE
+================================================
+
+Drift = output stops matching canon, page templates, or task scope.
+
+DETECTION SIGNALS
+-----------------
+[ ] Missing required week/page sections
+[ ] Tone/style changed from canon
+[ ] Added unapproved features/scope
+[ ] Ignored file structure or naming rules
+[ ] Replaced templates with ad hoc formats
+[ ] Long output with no verification step
+
+SEVERITY
+--------
+MILD: 1 issue -> restate the missing constraint
+MODERATE: multiple issues -> re-inject rules + canon
+SEVERE: off-scope / contradicts canon -> start new session
+
+RECOVERY PROTOCOL
+-----------------
+STEP 1 — DETECT
+"Compare your last output to these rules/templates and list violations."
+
+STEP 2 — RE-ANCHOR
+"Follow ALL rules in ops/rules.md and ops/canon.md for the remaining task."
+
+STEP 3 — REGENERATE
+"Regenerate the last output exactly to the required format. Do not add scope."
+
+STEP 4 — VERIFY
+"List each required section/rule and mark PASS or FAIL."
+
+COPY-PASTE RECOVERY PROMPT
+--------------------------
+STOP. Re-read these files and follow them exactly:
+- ops/rules.md
+- ops/canon.md
+- [relevant template file]
+
+Your recent output violated these requirements: [list].
+Regenerate the output. Before delivering, verify every required rule/section
+and mark PASS or FAIL.

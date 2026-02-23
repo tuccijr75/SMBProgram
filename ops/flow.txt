@@ -1,0 +1,98 @@
+================================================
+AI WORKFLOW CHEAT SHEET
+FLX AI Studio -- AI Workflow Mastery
+================================================
+
+THE CORE WORKFLOW
+-----------------
+Input -> Reason -> Output -> Verify -> Store
+
+1. INPUT:   Provide context, data, and source material
+2. REASON:  Structure the prompt (role + constraints + format)
+3. OUTPUT:  Generate the result
+4. VERIFY:  Check quality, accuracy, and compliance
+5. STORE:   Save outputs, decisions, and reusable prompts
+
+================================================
+
+PROMPT STRUCTURE (use every time)
+---------------------------------
+ROLE:        [Who the AI should be]
+TASK:        [What to produce]
+CONTEXT:     [Specific details and data]
+CONSTRAINTS: [Numbered rules]
+FORMAT:      [Exact output structure]
+
+================================================
+
+MODEL SELECTION
+---------------
+Task Type          -> Model Tier      -> Temperature
+Data extraction    -> Lightweight     -> 0.0-0.2
+Analysis/coding    -> Reasoning       -> 0.1-0.3
+General writing    -> Mid-tier        -> 0.3-0.5
+Brainstorming      -> Any             -> 0.7-1.0
+
+================================================
+
+DATA INGESTION HIERARCHY (best -> worst)
+---------------------------------------
+1. File uploads
+2. Quoted text blocks
+3. Markdown rule files
+4. Plain prompts
+5. Conversation memory
+
+Rule: If the data matters, put it directly
+in front of the model.
+
+================================================
+
+WHEN TO RE-ANCHOR INSTRUCTIONS
+------------------------------
+* Every task change
+* Every 10-15 turns
+* Every new session
+* Every major phase transition
+
+================================================
+
+FAILURE QUICK REFERENCE
+-----------------------
+DRIFT:          Output wanders from intent
+  Fix:          Re-inject constraints and canon
+
+HALLUCINATION:  AI fabricates facts
+  Fix:          Provide sources; add "use only provided data"
+
+OVERFLOW:       AI forgets early instructions
+  Fix:          Start new session with working context block
+
+MISINTERPRET:   AI does the wrong task
+  Fix:          Add output examples; be more specific
+
+================================================
+
+MASTER PROMPT COMPONENTS (7 total)
+----------------------------------
+1. Role definition
+2. Scope (in/out)
+3. Constraints (numbered)
+4. Output schema
+5. Failure handling
+6. Verification step
+7. Parameter slots
+
+================================================
+
+SESSION STARTUP SEQUENCE
+------------------------
+1. Paste your AI rulebook
+2. Paste your project canon
+3. Paste rolling summary of prior work
+4. State today's task
+5. Provide source material
+
+================================================
+Build systems, not just prompts.
+FLX AI Studio -- AI Workflow Mastery

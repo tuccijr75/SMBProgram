@@ -1,0 +1,94 @@
+================================================
+AI SESSION STARTUP CHECKLIST
+FLX AI Studio AI Workflow Mastery
+================================================
+
+Use this checklist every time you begin an AI
+session for important work. Takes 2 minutes.
+Prevents the most common quality failures.
+
+================================================
+
+BEFORE YOU TYPE ANYTHING
+
+
+[ ] 1. START A NEW SESSION
+     Don't continue yesterday's conversation.
+     Fresh context = better results.
+
+[ ] 2. PASTE YOUR RULEBOOK
+     Your personal AI operating rules (.md file).
+     This sets baseline behavior for the session.
+
+[ ] 3. PASTE YOUR PROJECT CANON (if applicable)
+     Identity, rules, decisions, style guide, status.
+     This is your project truth document.
+
+[ ] 4. PASTE ROLLING SUMMARY (if continuing a project)
+     Under 100 words. What was done, key decisions,
+     open issues. This replaces conversation history.
+
+================================================
+
+BEFORE YOUR FIRST PROMPT
+-------------------------
+
+[ ] 5. IDENTIFY YOUR TASK TYPE
+     [ ] Writing    -> Use writing pipeline or WritingMaster
+     [ ] Coding     -> Use Spec->Plan->Code->Test or CodingMaster
+     [ ] Research   -> Use anti-hallucination chain or ResearchMaster
+     [ ] Strategy   -> Use decision memo framework or StrategyMaster
+     [ ] Operations -> Use SOP/checklist workflow
+     [ ] General    -> Use role + context + constraints + format
+
+[ ] 6. GATHER YOUR SOURCE MATERIAL
+     Upload files when possible (best quality).
+     Paste text when upload isn't available.
+     Never rely on the AI's memory of past sessions.
+
+[ ] 7. CHOOSE YOUR MODEL TIER
+     [ ] Quick/simple task -> Lightweight model
+     [ ] Analysis/coding   -> Reasoning model
+     [ ] Creative work      -> Mid-tier, higher temperature
+
+================================================
+
+WRITING YOUR PROMPT
+-------------------
+
+[ ] 8. INCLUDE ALL FOUR ELEMENTS
+     [ ] ROLE:        Who the AI should be
+     [ ] CONTEXT:     Specific details and data
+     [ ] CONSTRAINTS: Numbered rules (5-10)
+     [ ] FORMAT:      Exact output structure
+
+[ ] 9. ADD FAILURE HANDLING
+     "If [X] is missing, ask for it. Don't guess."
+     "If unsure, say so. Don't fabricate."
+
+[ ] 10. ADD VERIFICATION STEP
+      "Before delivering, verify: [checklist]."
+
+================================================
+
+DURING THE SESSION
+------------------
+
+[ ] Re-anchor instructions every 10-15 turns
+[ ] Watch for drift signals (tone, format, rule violations)
+[ ] Save good outputs immediately (don't trust the session)
+[ ] If quality drops, don't push through -- new session
+
+================================================
+
+SESSION CLOSE
+-------------
+
+[ ] Save all outputs to project folder
+[ ] Write rolling summary for next session
+[ ] Update canon with new decisions
+[ ] Note any prompt improvements for next time
+
+================================================
+Build systems, not just prompts.
+FLX AI Studio -- AI Workflow Mastery
