@@ -1,915 +1,677 @@
-Term 1 Authoring Batch Plan (W02–W12)
-Global authoring rules for all Term 1 weeks (apply every time)
-Required weekly page standard
+# Term 1 Authoring Batch Plan (W02-W12)
+
+## Global Authoring Rules (Apply Every Time)
+
+### Required Weekly Page Standard
 
 Every week must include:
 
-measurable objective
+- measurable objective
+- competency gate
+- exact step-by-step instructions
+- required artifacts + file schemas
+- labs (exact steps)
+- QA checklist
+- submission checklist
+- pass criteria
+- troubleshooting
+- "what excellent looks like"
 
-competency gate
+### Vertical Stance
 
-exact step-by-step instructions
+- Vertical-agnostic by default
+- Any examples must be labeled `SIMULATED` unless explicitly real
 
-required artifacts + file schemas
+### File Naming Rule (Learner Artifacts)
 
-labs (exact steps)
+Keep names simple and consistent. Recommended per-week folder structure:
 
-QA checklist
+- `submissions/wXX/` (or equivalent)
+- simple file names inside (`brief.md`, `tests.md`, `data.csv`, etc.)
 
-submission checklist
+## Batch Structure (Authoring Order)
 
-pass criteria
-
-troubleshooting
-
-“what excellent looks like”
-
-Vertical stance
-
-Vertical-agnostic by default
-
-Any examples must be labeled SIMULATED unless explicitly real
-
-File naming rule (learner artifacts)
-
-Keep names simple and consistent. Recommend per-week folder structure:
-
-submissions/wXX/ (or equivalent)
-
-simple file names inside (brief.md, tests.md, data.csv, etc.)
-
-Batch structure (authoring order)
-Batch A — W02–W04
+### Batch A - W02-W04
 
 Module 2: Python + API Fundamentals
 
-W02: Python basics + scripts + files/errors
+- W02: Python basics + scripts + files/errors
+- W03: HTTP/REST/JSON + API calls + env vars
+- W04: Batch processing + transformations + tests + checkpoint scripts
 
-W03: HTTP/REST/JSON + API calls + env vars
-
-W04: Batch processing + transformations + tests + checkpoint scripts
-
-Batch B — W05–W06
+### Batch B - W05-W06
 
 Module 3: Data + Storage
 
-W05: SQL basics + schemas + SQLite
+- W05: SQL basics + schemas + SQLite
+- W06: CRUD patterns + logging + interaction history / queue patterns
 
-W06: CRUD patterns + logging + interaction history / queue patterns
-
-Batch C — W07–W08
+### Batch C - W07-W08
 
 Module 4: LLM Fundamentals + Prompt Systems
 
-W07: prompt systems + structured outputs
+- W07: prompt systems + structured outputs
+- W08: guardrails + evaluation + human review workflows
 
-W08: guardrails + evaluation + human review workflows
-
-Batch D — W09–W10
+### Batch D - W09-W10
 
 Module 5: Frontend Basics for Internal Tools
 
-W09: forms/tables/filters/validation
+- W09: forms/tables/filters/validation
+- W10: UX polish, states, role views, approval flows
 
-W10: UX polish, states, role views, approval flows
-
-Batch E — W11–W12
+### Batch E - W11-W12
 
 Module 6: Deployment Basics
 
-W11: hosting, secrets, logging, quotas
+- W11: hosting, secrets, logging, quotas
+- W12: monitoring, backup/export, deployment hardening + pre-capstone release prep
 
-W12: monitoring, backup/export, deployment hardening + pre-capstone release prep
+Recommended Batch F (immediately after): Term 1 Capstone page.
 
-Recommended Batch F (immediately after): Term 1 Capstone page
+## Per-Week Authoring Map (W02-W12)
 
-Per-week authoring map (W02–W12)
-W02 — Python Fundamentals for SMB Tool Scripts
-Week focus
+### W02 - Python Fundamentals for SMB Tool Scripts
 
+#### Week Focus
 Build confidence writing practical Python scripts for admin-style SMB tasks.
 
-Core learning outcomes (authoring target)
-
+#### Core Learning Outcomes (Authoring Target)
 Learner can:
 
-write functions
+- write functions
+- parse files (CSV/text)
+- handle common errors
+- use CLI arguments/basic script inputs
+- produce repeatable script outputs
 
-parse files (CSV/text)
+#### Required Learner Artifacts (Week Deliverables Map)
 
-handle common errors
+Folder: `submissions/w02/`
 
-use CLI arguments/basic script inputs
+- `brief.md` - what script problems were chosen and why
+- `clean.py` - CSV cleaner script (basic normalization)
+- `parse.py` - lead parser script (raw text -> structured fields)
+- `batch.py` - batch processor script (process multiple rows/files)
+- `tests.md` - manual test cases + expected/actual outputs
+- `log.md` - changelog / iteration notes
+- `check.md` - self-QA checklist completion
 
-produce repeatable script outputs
+#### Labs to Author (W02)
 
-Required learner artifacts (week deliverables map)
+- Lab 1: Python functions + file I/O mini task
+- Lab 2: error handling + input validation mini task
+- Lab 3: CSV cleanup mini task
 
-Folder: submissions/w02/
+#### Week Project/Checkpoint (W02)
+"Script Pack v1" (3 small scripts, rough but working)
 
-brief.md — what script problems were chosen and why
+#### Gate Emphasis
 
-clean.py — CSV cleaner script (basic normalization)
+- scripts run without syntax errors
+- inputs/outputs documented
+- at least one handled error case per script
 
-parse.py — lead parser script (raw text → structured fields)
+### W03 - HTTP, REST, JSON, and API Integration Basics
 
-batch.py — batch processor script (process multiple rows/files)
-
-tests.md — manual test cases + expected/actual outputs
-
-log.md — changelog / iteration notes
-
-check.md — self-QA checklist completion
-
-Labs to author (W02)
-
-Lab 1: Python functions + file I/O mini task
-
-Lab 2: error handling + input validation mini task
-
-Lab 3: CSV cleanup mini task
-
-Week project/checkpoint (W02)
-
-“Script Pack v1” (3 small scripts, rough but working)
-
-Gate emphasis
-
-scripts run without syntax errors
-
-inputs/outputs documented
-
-at least one handled error case per script
-
-W03 — HTTP, REST, JSON, and API Integration Basics
-Week focus
-
+#### Week Focus
 Teach the learner to call APIs reliably and transform responses into useful outputs.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-make HTTP requests
+- make HTTP requests
+- read JSON responses
+- handle status codes/basic failures
+- use environment variables for API keys
+- transform API output into structured records/files
 
-read JSON responses
+#### Required Learner Artifacts
 
-handle status codes/basic failures
+Folder: `submissions/w03/`
 
-use environment variables for API keys
+- `brief.md` - API use case chosen (vertical-agnostic)
+- `env.md` - env var setup notes (no secrets included)
+- `call.py` - API request script
+- `transform.py` - response transformation script
+- `out.json` - sample structured output
+- `tests.md` - request/response validation notes
+- `check.md` - self-QA checklist
+- `log.md` - changelog
 
-transform API output into structured records/files
+#### Labs to Author (W03)
 
-Required learner artifacts
+- Lab 1: inspect JSON payloads
+- Lab 2: request + parse + extract fields
+- Lab 3: error handling (rate/error response simulation)
 
-Folder: submissions/w03/
+#### Week Checkpoint
+API integration script that produces a clean JSON output from a remote response.
 
-brief.md — API use case chosen (vertical-agnostic)
+#### Gate Emphasis
 
-env.md — env var setup notes (no secrets included)
+- no hardcoded secrets
+- status/error handling demonstrated
+- JSON transformation reproducible
 
-call.py — API request script
+### W04 - Batch Processing, Utilities, and Testing Basics (Module 2 Checkpoint)
 
-transform.py — response transformation script
-
-out.json — sample structured output
-
-tests.md — request/response validation notes
-
-check.md — self-QA checklist
-
-log.md — changelog
-
-Labs to author (W03)
-
-Lab 1: inspect JSON payloads
-
-Lab 2: request + parse + extract fields
-
-Lab 3: error handling (rate/error response simulation)
-
-Week checkpoint
-
-API integration script that produces a clean JSON output from a remote response
-
-Gate emphasis
-
-no hardcoded secrets
-
-status/error handling demonstrated
-
-JSON transformation reproducible
-
-W04 — Batch Processing, Utilities, and Testing Basics (Module 2 Checkpoint)
-Week focus
-
+#### Week Focus
 Combine Python + API skills into practical script workflows and basic test discipline.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-batch process records
+- batch process records
+- chain scripts/utilities
+- create reusable helpers
+- validate outputs with a test checklist
+- deliver a mini script toolkit for admin tasks
 
-chain scripts/utilities
+#### Required Learner Artifacts
 
-create reusable helpers
+Folder: `submissions/w04/`
 
-validate outputs with a test checklist
+- `brief.md` - script toolkit scope and use cases
+- `tool1.py` - utility script #1
+- `tool2.py` - utility script #2
+- `tool3.py` - utility script #3
+- `sample.csv` - test input data (`SIMULATED` allowed)
+- `out.csv` - processed output
+- `tests.md` - test cases + results (required)
+- `readme.md` - how to run scripts
+- `check.md` - self-QA
+- `log.md` - changelog
 
-deliver a mini script toolkit for admin tasks
+#### Labs to Author (W04)
 
-Required learner artifacts
+- Lab 1: batch loop + file set processing
+- Lab 2: validation + skip bad rows
+- Lab 3: simple CLI interface / parameterization
 
-Folder: submissions/w04/
+#### Module 2 Checkpoint Outcome (Must Be Explicit in W04 Page)
+3 small scripts solving admin tasks end-to-end (from blueprint).
 
-brief.md — script toolkit scope and use cases
+#### Gate Emphasis
 
-tool1.py — utility script #1
+- exactly 3 scripts present
+- at least one batch workflow demonstrated
+- test evidence included
+- run instructions usable
 
-tool2.py — utility script #2
+### W05 - SQL Fundamentals and Schema Design for SMB Workflows
 
-tool3.py — utility script #3
-
-sample.csv — test input data (SIMULATED allowed)
-
-out.csv — processed output
-
-tests.md — test cases + results (required)
-
-readme.md — how to run scripts
-
-check.md — self-QA
-
-log.md — changelog
-
-Labs to author (W04)
-
-Lab 1: batch loop + file set processing
-
-Lab 2: validation + skip bad rows
-
-Lab 3: simple CLI interface / parameterization
-
-Module 2 checkpoint outcome (must be explicit in W04 page)
-
-3 small scripts solving admin tasks end-to-end (from blueprint)
-
-Gate emphasis
-
-exactly 3 scripts present
-
-at least one batch workflow demonstrated
-
-test evidence included
-
-run instructions usable
-
-W05 — SQL Fundamentals and Schema Design for SMB Workflows
-Week focus
-
+#### Week Focus
 Introduce relational thinking and schema design using practical SMB entities.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-define tables and fields
+- define tables and fields
+- write basic SQL queries
+- design schemas for leads/customers/jobs/interactions
+- use SQLite for local development
 
-write basic SQL queries
+#### Required Learner Artifacts
 
-design schemas for leads/customers/jobs/interactions
+Folder: `submissions/w05/`
 
-use SQLite for local development
+- `brief.md` - chosen workflow domain + entities
+- `schema.sql` - initial schema (SQLite)
+- `seed.sql` - seed/sample rows (`SIMULATED` allowed)
+- `queries.sql` - core queries (filters/sorts/lookups)
+- `erd.md` - simple entity relationship notes/diagram (text acceptable)
+- `tests.md` - query validation results
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W05)
 
-Folder: submissions/w05/
+- Lab 1: create tables + insert records
+- Lab 2: filtering/sorting queries
+- Lab 3: joins across 2-3 entities
 
-brief.md — chosen workflow domain + entities
+#### Week Checkpoint
+Working SQLite schema for a simple SMB workflow (lead/customer/job).
 
-schema.sql — initial schema (SQLite)
+#### Gate Emphasis
 
-seed.sql — seed/sample rows (SIMULATED allowed)
+- schema supports stated workflow
+- queries run successfully
+- keys/relationships are sensible
+- sample data matches schema
 
-queries.sql — core queries (filters/sorts/lookups)
+### W06 - CRUD Patterns, Task Queue Basics, and Audit Logging (Module 3 Checkpoint)
 
-erd.md — simple entity relationship notes/diagram (text acceptable)
-
-tests.md — query validation results
-
-check.md
-
-log.md
-
-Labs to author (W05)
-
-Lab 1: create tables + insert records
-
-Lab 2: filtering/sorting queries
-
-Lab 3: joins across 2–3 entities
-
-Week checkpoint
-
-Working SQLite schema for a simple SMB workflow (lead/customer/job)
-
-Gate emphasis
-
-schema supports stated workflow
-
-queries run successfully
-
-keys/relationships are sensible
-
-sample data matches schema
-
-W06 — CRUD Patterns, Task Queue Basics, and Audit Logging (Module 3 Checkpoint)
-Week focus
-
+#### Week Focus
 Teach data mutation patterns + operational tracking, not just reading data.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-implement CRUD logic against SQLite/Postgres-ready schema
+- implement CRUD logic against SQLite/Postgres-ready schema
+- record interaction history
+- model a basic task queue table/state flow
+- implement audit logging basics (who/what/when)
 
-record interaction history
+#### Required Learner Artifacts
 
-model a basic task queue table/state flow
+Folder: `submissions/w06/`
 
-implement audit logging basics (who/what/when)
+- `brief.md` - CRUD workflow scope
+- `schema.sql` - updated schema (CRUD + queue + logs)
+- `crud.py` (or `crud.md` if SQL-only week variant) - CRUD execution examples
+- `queue.md` - queue design (states, retries, timestamps)
+- `audit.md` - audit logging rules + examples
+- `queries.sql` - CRUD verification / reporting queries
+- `tests.md` - create/read/update/delete test results
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W06)
 
-Folder: submissions/w06/
+- Lab 1: CRUD lifecycle on one entity
+- Lab 2: queue record state transitions
+- Lab 3: audit trail inserts + verification
 
-brief.md — CRUD workflow scope
+#### Module 3 Checkpoint Outcome
+Lead intake DB + task queue + interaction history store (from blueprint scope).
 
-schema.sql — updated schema (CRUD + queue + logs)
+#### Gate Emphasis
 
-crud.py (or crud.md if SQL-only week variant) — CRUD execution examples
+- CRUD demonstrated end-to-end
+- queue model includes status + timestamps
+- audit entries exist for key changes
+- test evidence includes update/delete paths
 
-queue.md — queue design (states, retries, timestamps)
+### W07 - LLM Prompt Systems for Business Tasks (Structured Outputs Focus)
 
-audit.md — audit logging rules + examples
-
-queries.sql — CRUD verification / reporting queries
-
-tests.md — create/read/update/delete test results
-
-check.md
-
-log.md
-
-Labs to author (W06)
-
-Lab 1: CRUD lifecycle on one entity
-
-Lab 2: queue record state transitions
-
-Lab 3: audit trail inserts + verification
-
-Module 3 checkpoint outcome
-
-Lead intake DB + task queue + interaction history store (from blueprint scope)
-
-Gate emphasis
-
-CRUD demonstrated end-to-end
-
-queue model includes status + timestamps
-
-audit entries exist for key changes
-
-test evidence includes update/delete paths
-
-W07 — LLM Prompt Systems for Business Tasks (Structured Outputs Focus)
-Week focus
-
+#### Week Focus
 Use LLMs for reliable business tasks with clear prompt patterns and JSON outputs.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-write task-specific prompts (extract/classify/draft/transform)
+- write task-specific prompts (extract/classify/draft/transform)
+- define JSON output schemas
+- handle malformed outputs with retries/basic validation
+- separate system/task/output constraints clearly
 
-define JSON output schemas
+#### Required Learner Artifacts
 
-handle malformed outputs with retries/basic validation
+Folder: `submissions/w07/`
 
-separate system/task/output constraints clearly
+- `brief.md` - chosen business tasks (2-3)
+- `prompts.md` - prompt set (extraction/classification/drafting/transform)
+- `schema.json` - structured output schema(s)
+- `samples.md` - input/output examples (`SIMULATED` allowed)
+- `rules.md` - allowed/blocked output rules (draft)
+- `tests.md` - prompt test matrix (cases + results)
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W07)
 
-Folder: submissions/w07/
+- Lab 1: extraction prompt (email -> structured record)
+- Lab 2: classification prompt
+- Lab 3: drafting/transformation prompt with schema output
 
-brief.md — chosen business tasks (2–3)
+#### Week Checkpoint
+At least one task reliably returns schema-conformant structured output.
 
-prompts.md — prompt set (extraction/classification/drafting/transform)
+#### Gate Emphasis
 
-schema.json — structured output schema(s)
+- schema is explicit
+- examples include expected vs actual
+- prompt intent and output contract are separated
+- malformed output handling is addressed (even if manual retry logic in notes)
 
-samples.md — input/output examples (SIMULATED allowed)
+### W08 - Guardrails, Evaluation, and Human-in-the-Loop Review (Module 4 Checkpoint)
 
-rules.md — allowed/blocked output rules (draft)
+#### Week Focus
+Move from "works once" prompts to controlled, reviewable LLM workflows.
 
-tests.md — prompt test matrix (cases + results)
-
-check.md
-
-log.md
-
-Labs to author (W07)
-
-Lab 1: extraction prompt (email → structured record)
-
-Lab 2: classification prompt
-
-Lab 3: drafting/transformation prompt with schema output
-
-Week checkpoint
-
-At least one task reliably returns schema-conformant structured output
-
-Gate emphasis
-
-schema is explicit
-
-examples include expected vs actual
-
-prompt intent and output contract are separated
-
-malformed output handling is addressed (even if manual retry logic in notes)
-
-W08 — Guardrails, Evaluation, and Human-in-the-Loop Review (Module 4 Checkpoint)
-Week focus
-
-Move from “works once” prompts to controlled, reviewable LLM workflows.
-
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-define guardrails and failure handling
+- define guardrails and failure handling
+- create an evaluation harness/checklist
+- measure accuracy/consistency at a basic level
+- insert human review points for risky outputs
 
-create an evaluation harness/checklist
+#### Required Learner Artifacts
 
-measure accuracy/consistency at a basic level
+Folder: `submissions/w08/`
 
-insert human review points for risky outputs
+- `brief.md` - workflow and risk profile
+- `flow.md` - LLM workflow steps + review checkpoints
+- `guard.md` - guardrails, blocked outputs, fallback rules
+- `eval.md` - evaluation rubric/checklist + sample scoring
+- `cases.md` - test cases (good/bad/edge)
+- `results.md` - evaluation results summary
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W08)
 
-Folder: submissions/w08/
+- Lab 1: guardrail design for a drafting task
+- Lab 2: hallucination/consistency check harness
+- Lab 3: human approval workflow simulation
 
-brief.md — workflow and risk profile
+#### Module 4 Checkpoint Outcomes (Blueprint-Aligned)
 
-flow.md — LLM workflow steps + review checkpoints
+- Email-to-CRM structured extraction
+- Review response generator w/ tone settings
+- Estimate note summarizer
 
-guard.md — guardrails, blocked outputs, fallback rules
+These can be "mini systems" with simulated inputs if needed.
 
-eval.md — evaluation rubric/checklist + sample scoring
+#### Gate Emphasis
 
-cases.md — test cases (good/bad/edge)
+- evaluation criteria visible
+- human-review step explicitly placed
+- fallback/retry behavior documented
+- risky outputs are constrained
 
-results.md — evaluation results summary
+### W09 - Frontend Basics for Internal Tools (Forms, Tables, Validation)
 
-check.md
-
-log.md
-
-Labs to author (W08)
-
-Lab 1: guardrail design for a drafting task
-
-Lab 2: hallucination/consistency check harness
-
-Lab 3: human approval workflow simulation
-
-Module 4 checkpoint outcomes (blueprint-aligned)
-
-Email-to-CRM structured extraction
-
-Review response generator w/ tone settings
-
-Estimate note summarizer
-(These can be “mini systems” with simulated inputs if needed.)
-
-Gate emphasis
-
-evaluation criteria visible
-
-human-review step explicitly placed
-
-fallback/retry behavior documented
-
-risky outputs are constrained
-
-W09 — Frontend Basics for Internal Tools (Forms, Tables, Validation)
-Week focus
-
+#### Week Focus
 Build usable internal UI patterns for speed and clarity (not visual polish).
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-build form inputs and validation
+- build form inputs and validation
+- display tabular data and filters
+- design one-screen operator flow
+- handle basic loading/error states
 
-display tabular data and filters
+#### Required Learner Artifacts
 
-design one-screen operator flow
+Folder: `submissions/w09/`
 
-handle basic loading/error states
-
-Required learner artifacts
-
-Folder: submissions/w09/
-
-brief.md — UI workflow target (internal tool)
-
-ui.md — screen plan / layout notes
-
-form.md — form fields + validation rules
-
-table.md — table columns + filters/sorts
-
-states.md — loading/error/empty states
-
-demo.md — screenshots + walkthrough notes
-
-tests.md — UI behavior checklist
-
-check.md
-
-log.md
+- `brief.md` - UI workflow target (internal tool)
+- `ui.md` - screen plan / layout notes
+- `form.md` - form fields + validation rules
+- `table.md` - table columns + filters/sorts
+- `states.md` - loading/error/empty states
+- `demo.md` - screenshots + walkthrough notes
+- `tests.md` - UI behavior checklist
+- `check.md`
+- `log.md`
 
 If code is required in the week build, add:
 
-app.* (or page.*) — minimal implementation file(s)
+- `app.*` (or `page.*`) - minimal implementation file(s)
 
-Labs to author (W09)
+#### Labs to Author (W09)
 
-Lab 1: intake form with validation
+- Lab 1: intake form with validation
+- Lab 2: table + filters
+- Lab 3: empty/error/loading states
 
-Lab 2: table + filters
+#### Week Checkpoint
+Admin dashboard + intake form prototype (blueprint-aligned).
 
-Lab 3: empty/error/loading states
+#### Gate Emphasis
 
-Week checkpoint
+- one-screen flow is clear
+- validation rules exist and are tested
+- state handling documented (not just happy path)
+- UI supports speed-first workflow
 
-Admin dashboard + intake form prototype (blueprint-aligned)
+### W10 - UX for Non-Technical Owners (Defaults, Role Views, Approval Flows) (Module 5 Checkpoint)
 
-Gate emphasis
-
-one-screen flow is clear
-
-validation rules exist and are tested
-
-state handling documented (not just happy path)
-
-UI supports speed-first workflow
-
-W10 — UX for Non-Technical Owners (Defaults, Role Views, Approval Flows) (Module 5 Checkpoint)
-Week focus
-
+#### Week Focus
 Make internal tools adoptable by non-technical SMB users.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-reduce settings overload (default-first design)
+- reduce settings overload (default-first design)
+- create role-based views
+- design manual override / approve-edit-send workflows
+- write onboarding/help copy that reduces support burden
 
-create role-based views
+#### Required Learner Artifacts
 
-design manual override / approve-edit-send workflows
+Folder: `submissions/w10/`
 
-write onboarding/help copy that reduces support burden
+- `brief.md` - target user roles and workflow
+- `roles.md` - owner/admin/staff permission view matrix
+- `setup.md` - first-run setup wizard flow
+- `approve.md` - approve/edit/send workflow screen spec
+- `copy.md` - onboarding copy/tooltips/help text
+- `demo.md` - UX walkthrough + rationale
+- `tests.md` - usability checklist / scenario tests
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W10)
 
-Folder: submissions/w10/
+- Lab 1: first-run setup flow
+- Lab 2: role view / permissions display logic
+- Lab 3: approval queue UX with manual override
 
-brief.md — target user roles and workflow
+#### Module 5 Checkpoint Outcomes (Blueprint-Aligned)
 
-roles.md — owner/admin/staff permission view matrix
+- Admin dashboard
+- Intake form
+- Simple approval queue
 
-setup.md — first-run setup wizard flow
+Refined for adoption, not just functionality.
 
-approve.md — approve/edit/send workflow screen spec
+#### Gate Emphasis
 
-copy.md — onboarding copy/tooltips/help text
+- role differences are explicit
+- defaults are sane and documented
+- manual override exists
+- UI copy explains risky/confusing actions
 
-demo.md — UX walkthrough + rationale
+### W11 - Deployment Basics: Hosting, Secrets, Logging, Quotas
 
-tests.md — usability checklist / scenario tests
-
-check.md
-
-log.md
-
-Labs to author (W10)
-
-Lab 1: first-run setup flow
-
-Lab 2: role view / permissions display logic
-
-Lab 3: approval queue UX with manual override
-
-Module 5 checkpoint outcomes (blueprint-aligned)
-
-Admin dashboard
-
-Intake form
-
-Simple approval queue
-(Refined for adoption, not just functionality)
-
-Gate emphasis
-
-role differences are explicit
-
-defaults are sane and documented
-
-manual override exists
-
-UI copy explains risky/confusing actions
-
-W11 — Deployment Basics: Hosting, Secrets, Logging, Quotas
-Week focus
-
+#### Week Focus
 Get tools online safely with minimal operational discipline.
 
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-prepare a deployment checklist
+- prepare a deployment checklist
+- configure environment variables/secrets correctly
+- add basic logging/monitoring hooks
+- account for rate limits/quotas
+- document startup and run steps
 
-configure environment variables/secrets correctly
+#### Required Learner Artifacts
 
-add basic logging/monitoring hooks
+Folder: `submissions/w11/`
 
-account for rate limits/quotas
+- `brief.md` - deployment target and assumptions
+- `deploy.md` - deployment checklist + steps (required)
+- `env.md` - env var map (names only, no values)
+- `logs.md` - logging events to capture
+- `limits.md` - rate/usage quota plan
+- `run.md` - runbook / startup steps
+- `tests.md` - smoke test checklist/results
+- `check.md`
+- `log.md`
 
-document startup and run steps
+#### Labs to Author (W11)
 
-Required learner artifacts
+- Lab 1: secrets/env management checklist
+- Lab 2: smoke test + health check
+- Lab 3: logging + quota failure scenario planning
 
-Folder: submissions/w11/
+#### Week Checkpoint
+Deployable package/checklist for one internal tool.
 
-brief.md — deployment target and assumptions
+#### Gate Emphasis
 
-deploy.md — deployment checklist + steps (required)
+- no secrets committed
+- runbook is usable
+- smoke test evidence included
+- logging and quota strategy documented
 
-env.md — env var map (names only, no values)
+### W12 - Monitoring, Backup/Export, Hardening, and Pre-Capstone Release Prep (Module 6 Checkpoint)
 
-logs.md — logging events to capture
+#### Week Focus
+Turn "deployed" into "operationally usable" and prep for Term 1 capstone tools.
 
-limits.md — rate/usage quota plan
-
-run.md — runbook / startup steps
-
-tests.md — smoke test checklist/results
-
-check.md
-
-log.md
-
-Labs to author (W11)
-
-Lab 1: secrets/env management checklist
-
-Lab 2: smoke test + health check
-
-Lab 3: logging + quota failure scenario planning
-
-Week checkpoint
-
-Deployable package/checklist for one internal tool
-
-Gate emphasis
-
-no secrets committed
-
-runbook is usable
-
-smoke test evidence included
-
-logging and quota strategy documented
-
-W12 — Monitoring, Backup/Export, Hardening, and Pre-Capstone Release Prep (Module 6 Checkpoint)
-Week focus
-
-Turn “deployed” into “operationally usable” and prep for Term 1 capstone tools.
-
-Core learning outcomes
-
+#### Core Learning Outcomes
 Learner can:
 
-define backup/export basics
+- define backup/export basics
+- create monitoring/alert checks
+- document rollback/recovery basics
+- complete a pre-capstone release readiness review
 
-create monitoring/alert checks
+#### Required Learner Artifacts
 
-document rollback/recovery basics
+Folder: `submissions/w12/`
 
-complete a pre-capstone release readiness review
+- `brief.md` - tool/release scope for readiness pass
+- `monitor.md` - monitoring metrics/events/checks
+- `backup.md` - backup/export/restore notes
+- `rollback.md` - rollback/recovery playbook (basic)
+- `risk.md` - deployment risk review updates
+- `release.md` - release readiness checklist/results
+- `tests.md` - operational test checks (smoke + failure scenarios)
+- `check.md`
+- `log.md`
 
-Required learner artifacts
+#### Labs to Author (W12)
 
-Folder: submissions/w12/
+- Lab 1: backup/export path design
+- Lab 2: monitoring & alert checklist
+- Lab 3: release readiness review (go/no-go)
 
-brief.md — tool/release scope for readiness pass
-
-monitor.md — monitoring metrics/events/checks
-
-backup.md — backup/export/restore notes
-
-rollback.md — rollback/recovery playbook (basic)
-
-risk.md — deployment risk review updates
-
-release.md — release readiness checklist/results
-
-tests.md — operational test checks (smoke + failure scenarios)
-
-check.md
-
-log.md
-
-Labs to author (W12)
-
-Lab 1: backup/export path design
-
-Lab 2: monitoring & alert checklist
-
-Lab 3: release readiness review (go/no-go)
-
-Module 6 checkpoint / Term 1 prep outcome
-
+#### Module 6 Checkpoint / Term 1 Prep Outcome
 Learner has at least one tool with:
 
-deployment checklist
+- deployment checklist
+- secrets handling plan
+- logging/monitoring basics
+- backup/export basics
+- release readiness checklist
 
-secrets handling plan
+#### Gate Emphasis
 
-logging/monitoring basics
+- backup/export path exists and is documented
+- rollback plan exists (even minimal)
+- monitoring checks are defined
+- release checklist completed honestly (with known risks)
 
-backup/export basics
+## Batch Production Schedule (Authoring Execution Order)
 
-release readiness checklist
+### Batch A (W02-W04) - Python/API Fundamentals
 
-Gate emphasis
+#### What to Author in This Batch
 
-backup/export path exists and is documented
+- `w02.md`, `w03.md`, `w04.md`
+- all associated lab pages (if separate pages)
+- any shared appendix for:
+  - Python setup verification
+  - CLI basics
+  - env vars
+  - API error handling cheatsheet
 
-rollback plan exists (even minimal)
+#### Batch A QA Gates
 
-monitoring checks are defined
+- W02-W04 all include exact commands/steps
+- W04 explicitly enforces 3-script checkpoint
+- artifact maps are consistent across all 3 weeks
+- simulated examples labeled
 
-release checklist completed honestly (with known risks)
+### Batch B (W05-W06) - Data + Storage
 
-Batch production schedule (authoring execution order)
-Batch A (W02–W04) — Python/API Fundamentals
-What to author in this batch
+#### What to Author
 
-w02.md, w03.md, w04.md
+- `w05.md`, `w06.md`
+- optional shared SQL reference appendix
+- shared schema conventions page (entities + naming)
 
-all associated lab pages (if separate pages)
+#### Batch B QA Gates
 
-any shared appendix for:
+- schema examples are consistent across W05/W06
+- CRUD + logging + queue concepts are not conflated
+- tests are required in both weeks
+- vertical-agnostic examples preserved
 
-Python setup verification
+### Batch C (W07-W08) - LLM Fundamentals + Prompt Systems
 
-CLI basics
+#### What to Author
 
-env vars
+- `w07.md`, `w08.md`
+- shared prompt notation conventions page
+- shared evaluation criteria reference page (optional)
 
-API error handling cheatsheet
+#### Batch C QA Gates
 
-Batch A QA gates
+- schema output requirements are explicit
+- guardrails + eval + HITL are operational, not conceptual only
+- examples clearly mark simulated inputs
+- no "magic prompting" language without verification steps
 
- W02–W04 all include exact commands/steps
+### Batch D (W09-W10) - Frontend + UX
 
- W04 explicitly enforces 3-script checkpoint
+#### What to Author
 
- artifact maps are consistent across all 3 weeks
+- `w09.md`, `w10.md`
+- optional shared UI checklist page for internal tools
 
- simulated examples labeled
+#### Batch D QA Gates
 
-Batch B (W05–W06) — Data + Storage
-What to author
+- UI weeks include concrete workflow steps, not design theory only
+- error/loading/empty states are required
+- role-based view logic is explicit in W10
+- approval flow includes manual override
 
-w05.md, w06.md
+### Batch E (W11-W12) - Deployment Basics
 
-optional shared SQL reference appendix
+#### What to Author
 
-shared schema conventions page (entities + naming)
+- `w11.md`, `w12.md`
+- shared deployment checklist appendix (optional)
+- shared security/privacy reminders page (basic)
 
-Batch B QA gates
+#### Batch E QA Gates
 
- schema examples are consistent across W05/W06
+- secrets handling is explicit (no secret values)
+- smoke tests required
+- backup/export and rollback included
+- release readiness checklist present in W12
 
- CRUD + logging + queue concepts are not conflated
+## Term 1 Authoring Definition of Done (W02-W12)
 
- tests are required in both weeks
+Term 1 (weeks only) is done when all are true:
 
- vertical-agnostic examples preserved
+- W02-W12 exist and build cleanly
+- every week uses the deep week template sections
+- every week has exact step-by-step instructions
+- every week includes required artifact schemas
+- every week includes labs + QA + pass criteria
+- all examples are vertical-agnostic (or labeled simulated)
+- cross-week dependencies are accurate
+- no dead links/frontmatter/build errors
 
-Batch C (W07–W08) — LLM Fundamentals + Prompt Systems
-What to author
+Recommended immediately after: author Term 1 Capstone page using `docs/templates/cap.md`.
 
-w07.md, w08.md
+## Suggested Codex Handoff Prompt (Planning Files / Scaffolding Only)
 
-shared prompt notation conventions page
-
-shared evaluation criteria reference page (optional)
-
-Batch C QA gates
-
- schema output requirements are explicit
-
- guardrails + eval + HITL are operational, not conceptual only
-
- examples clearly mark simulated inputs
-
- no “magic prompting” language without verification steps
-
-Batch D (W09–W10) — Frontend + UX
-What to author
-
-w09.md, w10.md
-
-optional shared UI checklist page for internal tools
-
-Batch D QA gates
-
- UI weeks include concrete workflow steps, not design theory only
-
- error/loading/empty states are required
-
- role-based view logic is explicit in W10
-
- approval flow includes manual override
-
-Batch E (W11–W12) — Deployment Basics
-What to author
-
-w11.md, w12.md
-
-shared deployment checklist appendix (optional)
-
-shared security/privacy reminders page (basic)
-
-Batch E QA gates
-
- secrets handling is explicit (no secret values)
-
- smoke tests required
-
- backup/export and rollback included
-
- release readiness checklist present in W12
-
-Term 1 authoring Definition of Done (W02–W12)
-
-Term 1 (weeks only) is “done” when all are true:
-
- W02–W12 exist and build cleanly
-
- Every week uses the deep week template sections
-
- Every week has exact step-by-step instructions
-
- Every week includes required artifact schemas
-
- Every week includes labs + QA + pass criteria
-
- All examples are vertical-agnostic (or labeled simulated)
-
- Cross-week dependencies are accurate
-
- No dead links/frontmatter/build errors
-
-Recommended immediately after: author Term 1 Capstone page using docs/templates/cap.md.
-
-Suggested Codex handoff prompt (for planning files / scaffolding only)
-Create a Term 1 authoring planning document (not lesson content yet) using the provided batch plan and per-week artifact maps for W02–W12.
+```md
+Create a Term 1 authoring planning document (not lesson content yet) using the provided batch plan and per-week artifact maps for W02-W12.
 
 Output file:
 - /docs/ops/term1-plan.md
 
 Include:
-1) Batch order (A–E)
-2) W02–W12 per-week authoring summary
+1) Batch order (A-E)
+2) W02-W12 per-week authoring summary
 3) Per-week learner artifact map
 4) Batch QA gates
 5) Term 1 authoring Definition of Done
 
 Do not generate week lesson pages in this task.
 Then run local build and report any errors.
-Update /docs/ops/changelog.md with: "Added Term 1 authoring batch plan (W02–W12) with artifact maps."
+Update /docs/ops/changelog.md with: "Added Term 1 authoring batch plan (W02-W12) with artifact maps."
+```

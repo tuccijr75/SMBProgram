@@ -5,3 +5,4 @@
 - Added Phase 3 curriculum system assets: week/lab/project templates and labs/gates rubrics.
 - Rewrote Term 1 Week 1 as Module 1: Product Thinking for SMB AI with competency gate, assignment artifacts, and pass criteria.
 - Added deep template pack v1 (week/lab/project/cap + rubrics/gates).
+- Added Term 1 authoring batch plan (W02–W12) with artifact maps.
