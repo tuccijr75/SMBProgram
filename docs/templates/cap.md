@@ -1,5 +1,5 @@
 ---
-title: [Capstone Name]
+title: "[Capstone Name]"
 sidebar_position: 99
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: [Project Name]
+title: "[Project Name]"
 sidebar_position: 99
 ---
 

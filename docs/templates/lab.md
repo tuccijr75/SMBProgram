@@ -1,5 +1,5 @@
 ---
-title: [Lab Name]
+title: "[Lab Name]"
 sidebar_position: 99
 ---
 
