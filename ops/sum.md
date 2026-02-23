@@ -1,4 +1,4 @@
 # Rolling Summary
 > Keep under 100 words. Replace this after each session.
 
-Docusaurus v0.1 scaffold was added for the SMB AI Tool Builder site: core config, docs structure, Week 1 page with required sections, template/rubric starters, portfolio/term placeholders, and GitHub Pages workflow. Existing `docs/ops` files were preserved. Build succeeds in a `/tmp` mirror (`npm install`, `npm run build`); a WSL `/mnt/d` npm rename-permission issue blocked direct install in repo, so `package-lock.json` from the successful mirror install was copied into the repo for CI use.
+Phase 3 content system is now in place. Added reusable `week`, `lab`, and `project` templates; expanded rubric set with `labs` and new `gates`; and fully rewrote `term1/w01` as Product Thinking for SMB AI with measurable objective, pain categories, ROI framing, must-have vs nice-to-have filter, tool archetypes, assignment requirements, artifact list, rubric summary, competency gate pass criteria, hours, and ship checklist. Updated docs changelog and prepared this session summary draft.
